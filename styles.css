@@ -1,0 +1,123 @@
+:root {
+    --doc-height: 100%;
+    --doc-width: 100%;
+    /*light colors*/
+    --light-orange: #f9d793;
+    --light-blue: #c5f6f6;
+    --light-green: #c9eab1;
+    --light-purple: #cfaed5;
+    --light-pink: #fecbdf;
+    /*dark colors*/
+    --dark-orange: #5B3F06;
+    --dark-blue: #115555;
+    --dark-green: #2B4D14;
+    --dark-purple: #3E2244;
+    --dark-pink: #840133;
+    --heading: "Matemasie", sans-serif;
+    --sub: "Sanchez", serif;
+    --text: "Playfair Display", serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+h1 {
+    font-family: var(--heading);
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: var(--sub);
+}
+
+h3 {
+    font-family: var(--heading);
+    font-size: 2.5rem;
+    -webkit-text-stroke: 0.05rem black;
+}
+
+h4, h5, h6 {
+    font-family: var(--sub);
+    letter-spacing: 0.1rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+article {
+    background-color: blue;
+    color: white;
+    width: 80%;
+    padding: 2%;
+    font-family: var(--text);
+    letter-spacing: 0.05rem;
+    
+}
+
+.about img {
+    width: 50%;
+    float: right;
+    padding: 2rem;
+}
+
+nav {
+    position: fixed;
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.drop-down .list {
+    position: fixed;
+    top: 1rem;
+    width: 10%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+nav:hover .drop-down {display: block};
+
+a {
+    text-decoration: none;
+}
+.list a {
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.list a:visited {
+    color: white;
+}
+.list a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+.specs div, .work div, .education div, .referrals div{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: space-evenly;
+}
+
+.specs div section, .work div section, .education div section, .referrals div section{
+    width: 40%;
+    padding: 1rem;
+    border: 1px solid black;
+}

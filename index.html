@@ -5,16 +5,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a>Skills</a></li>
-                    <li><a>Work Experience</a></li>
-                    <li><a>Education</a></li>
-                    <li><a>Referrals</a></li>
-                </ul>
+                <button class="nav-button">Menu</button>
+                <div class="drop-down">
+                    <article class="list">
+                    <a href="#skills">Skills</a>
+                    <a href="#work">Work Experience</a>
+                    <a href="#education">Education</a>
+                    <a href="#referrals">Referrals</a>
+                </article>
+                </div>
             </nav>
         </header>
         <main>
@@ -24,34 +30,31 @@
             <h2>
                 Part Time Virtual Assistant
             </h2>
-            <article>
+            <article class="about">
                 <h3>Why Me?</h3>
-                <p>So your hours are for you!</p>
+                <figure>
+                    <img src="./media/profilepic.jpg" alt="zephyr b. goose" />
+                </figure>
                 <p>Call me a weirdo but I find joy in tedious tasks
-                    and uncovering the secrets of beuracracy. 
-                    I did data entry of historic documents after school as a teenager just for fun!
+                    and uncovering the secrets of beuracracy. So much so I did data entry of historic census data after school as a teenager just for fun!
+                    <br>
+                    <br>
                     While I've not done any professional Virtual Assistant work yet, 
                     I have taken on this responsibility for my friends. 
                     I've facilitated a legal name change, disability paperwork, 
                     making appointments, budgeting, scheduling, inbox organization 
                     and more. 
-
+                    <br>
+                    <br>
                     I've also been learning software design and IT troubleshooting 
                     to further my digital skill set. 
-
+                    <br> 
+                    <br>
                     I'm excited for the opportunity to encounter new and exciting problems to solve when we work together. 
                     What are you waiting for? Reach out and let me take some of that tedium off your plate!
                 </p>
-                my story 
-                why you need me 
-                what i can do
             </article>
-            <article>
-                <h3>Contact</h3>
-            <!--create a form here soon but we gotta brush up on php-->
-                <h4>zephyrbgoose@gmail.com</h4>
-        </article>
-            <article>
+            <article class="skills">
                 <h3>Skills</h3>
                 <ul>
                     <li>88wpm Typing Speed</li>
@@ -62,42 +65,49 @@
                     <li>Proficient in Google and Microsoft Office Suites</li>
                 </ul>
             </article>
-            <article>
+            <article class="specs">
                 <h3>Home Office Specs</h3>
+                <div>
                 <section>
-                    <h5>Internet Connection</h5>
-                    <h6>Comcast Cable</h6>
+                    <h4>Internet Connection</h4>
+                    <h5>Comcast Cable</h5>
                     <ul>
                         <li>Download Speed: 392.66Mbps</li>
                         <li>Upload Speed: 28.73 Mbps</li>
                         <li>Latency: 5ms</li>
                     </ul>
-                    <h5>Laptop</h5>
-                    <h6>Dell Inspiron 16 5620</h6>
+                </section>
+                <section>
+                    <h4>Laptop</h5>
+                    <h5>Dell Inspiron 16 5620</h6>
                     <ul>
-                        <li>Processor: 12th Gen Intel(R) Core(TM) i5-1235U   1.30 GHz</li>
+                        <li>Processor: 12th Gen Intel Core i5-1235U</li>
                         <li>Ram: 16.0GB</li>
                         <li>Windows 11</li>
                     </ul>
-                    <h5>Printer</h5>
-                    <h6>Brother MFC-J985DW</h6>
+                </section>
+                <section>
+                    <h4>Printer</h4>
+                    <h5>Brother MFC-J985DW</h5>
                         <ul>
                             <li>Fax</li>
                             <li>Scan</li>
                             <li>Color Printing</li>
                         </ul>
-                    <p></p>
-                    <h5>Headphones</h5>
-                    <h6>OneOdio Bluetooth Over Ear Headphones</h6>
+                </section>
+                <section>
+                    <h4>Headphones</h4>
+                    <h5>OneOdio Bluetooth Over Ear Headphones</h5>
                         <ul>
                             <li>In-line Mic</li>
                             <li>Bluetooth</li>
                         </ul>
-                    <p></p>
                 </section>
+            </div>
             </article>
-            <article>
+            <article class="work">
                 <h3>Work Experience</h3>
+                <div>
                 <section>
                     <h4>Cashier/ Organizer/ Customer Service</h4>
                     <h5>Clever Octopus Reuse Center</h5>
@@ -118,9 +128,11 @@
                         <li>Coaching new representatives on de-escalation tactics</li>
                     </ul>
                 </section>
+                </div>
             </article>
-            <article>
+            <article class="education">
                 <h3>Education</h3>
+                <div>
                 <section>
                     <h4>Codecademy</h4>
                     <h5>2023- Present</h5>
@@ -140,9 +152,11 @@
                     <h4>Bingham High School</h4>
                     <h5>Graduated 2016</h5>
                 </section>
+            </div>
             </article>
-            <article>
+            <article class="referrals">
                 <h3>Referrals</h3>
+                <div>
                 <section>
                     <h4>Carina Barajas</h4>
                     <h5>Manager - Clever Octopus</h5>
@@ -168,7 +182,13 @@
                         </ul>
                     </div>
                 </section>
+                </div>
             </article>
+            <article class="contact">
+                <h3>Contact</h3>
+            <!--create a form here soon but we gotta brush up on php-->
+                <h4>zephyrbgoose@gmail.com</h4>
+        </article>
         </main>
     </body>
 </html>
