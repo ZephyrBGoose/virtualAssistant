@@ -39,12 +39,32 @@ h2 {
 h3 {
     font-family: var(--heading);
     font-size: 2.5rem;
-    -webkit-text-stroke: 0.05rem black;
+    -webkit-text-stroke: 0.07rem var(--dark-orange);
+    color: var(--light-orange);
 }
 
 h4, h5, h6 {
     font-family: var(--sub);
     letter-spacing: 0.1rem;
+    font-style: bold;
+}
+
+article {
+    background-color: transparent;
+    color: var(--light-green);
+    width: 96%;
+    padding: 2%;
+    font-family: var(--text);
+    letter-spacing: 0.05rem;
+    
+}
+
+
+
+body {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    padding-bottom: 5%;
 }
 
 main {
@@ -53,39 +73,56 @@ main {
     flex-direction: column;
 }
 
-article {
-    background-color: blue;
-    color: white;
-    width: 80%;
-    padding: 2%;
-    font-family: var(--text);
-    letter-spacing: 0.05rem;
-    
+
+#page {
+    width: 79%;
+    border: 1rem solid var(--dark-orange);
+    background-image: url(./media/xv.png);
+    background-color: var(--dark-purple);
 }
 
 .about img {
     width: 50%;
     float: right;
-    padding: 2rem;
+    margin: 2rem;
+    border-radius: 12.5%;
+    border: solid 0.6rem var(--light-blue);
+    float: right;
 }
 
 nav {
     position: fixed;
 }
 
+.nav-button {
+    background-color: var(--dark-orange);
+    color: var(--light-orange);
+    border: solid 0.3rem var(--dark-purple);
+    padding: 0.5rem;
+    font-family: var(--sub);
+    font-style: bold;
+    font-size: 1.1rem;
+}
+
 .drop-down {
     display: none;
     position: absolute;
     z-index: 1;
+    padding: 0.1rem;
+    margin: 0;
+    background-color: var(--dark-green);
 }
 
 .drop-down .list {
     position: fixed;
     top: 1rem;
-    width: 10%;
+    width: 8%;
     text-align: left;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-purple);
 }
 
 nav:hover .drop-down {display: block};
@@ -94,7 +131,7 @@ a {
     text-decoration: none;
 }
 .list a {
-    padding: 0.5rem;
+   padding: 0.5rem;
     color: white;
     text-decoration: none;
 }
@@ -103,7 +140,7 @@ a {
     color: white;
 }
 .list a:hover {
-    background-color: black;
+    background-color: var(--dark-orange);
     color: white;
 }
 
@@ -113,11 +150,29 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-self: center;
-    align-items: space-evenly;
+    align-items: space-around;
 }
 
 .specs div section, .work div section, .education div section, .referrals div section{
     width: 40%;
     padding: 1rem;
-    border: 1px solid black;
+    border: 0.2rem inset var(--light-purple);
+    margin: 2%;
+    background-color: var(--dark-purple);
+    color: var(--light-green);
+    z-index: 1;
+}
+
+.skills section, .contact h4 {
+    background-color: var(--dark-purple);
+    width: 50%;
+    padding: 1rem;
+    border: 0.2rem inset var(--light-purple);
+}
+
+.referrals ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   padding-bottom: 1rem;
 }
