@@ -156,7 +156,7 @@ a {
 .specs div section, .work div section, .education div section, .referrals div section{
     width: 40%;
     padding: 1rem;
-    border: 0.2rem inset var(--light-orange);
+    border: 0.2rem inset var(--light-purple);
     margin: 2%;
     background-color: var(--dark-purple);
     color: var(--light-green);
@@ -167,7 +167,7 @@ a {
     background-color: var(--dark-purple);
     width: 50%;
     padding: 1rem;
-    border: 0.2rem inset var(--light-orange);
+    border: 0.2rem inset var(--light-purple);
 }
 
 .referrals ul {
