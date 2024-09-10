@@ -154,7 +154,7 @@ a {
     align-items: space-around;
 }
 
-.specs div section, .work div section, .education div section, .referrals div section{
+.about p, .specs div section, .work div section, .education div section, .referrals div section{
     width: 40%;
     padding: 1rem;
     border: 0.2rem inset var(--light-purple);
