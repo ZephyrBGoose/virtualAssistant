@@ -85,7 +85,7 @@ main {
 .about img {
     width: 50%;
     float: right;
-    margin: 2rem;
+    margin-right: 1rem;
     border-radius: 12.5%;
     border: solid 0.6rem var(--light-blue);
 }
