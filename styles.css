@@ -178,6 +178,10 @@ a {
    padding-bottom: 1rem;
 }
 
+.referrals {
+    display: none;
+}
+
 @media only screen and (max-width: 875px) {
 
     .about img {
